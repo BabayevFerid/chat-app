@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Tətbiqi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>💬 Real Time Chat</h2>
+        <div id="messages"></div>
+        <input id="username" placeholder="İstifadəçi adınız" />
+        <input id="message" placeholder="Mesajınız" />
+        <button onclick="sendMessage()">Göndər</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
